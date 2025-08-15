@@ -6,6 +6,7 @@ import Skills from './Skills';
 import CoolStuff from './CoolStuff';
 import WannaPlaySomeTunes from './WannaPlaySomeTunes';
 import Header from './Header';
+import EngineeringTrivia from './EngineeringTrivia';
 
 function Portfolio({ className }) {
   const [projectExpanded, setProjectExpanded] = useState(false);
@@ -34,6 +35,9 @@ function Portfolio({ className }) {
         </div>
         <div className={`${transitionClasses} ${projectExpanded ? expandedClasses : `${collapsedClasses} ${spacingClasses}`}`}>
           <Skills />
+        </div>
+        <div className={`${transitionClasses} ${projectExpanded ? expandedClasses : `${collapsedClasses} ${spacingClasses}`}`}>
+          <EngineeringTrivia />
         </div>
         <div className={`${transitionClasses} ${projectExpanded ? expandedClasses : `${collapsedClasses} ${spacingClasses}`}`}>
           <WannaPlaySomeTunes />
