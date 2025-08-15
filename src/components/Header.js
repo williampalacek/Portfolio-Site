@@ -36,26 +36,26 @@ function Header() {
     <header className="">
       <Confetti active={ isExploding } config={ config }/>
       <h1 className="font-Outfit text-5xl font-bold">{">>"} {profile.initials}.</h1>
-      <p className="font-Inter font-normal mt-6"> <span className="bg-sea_blue">having fun comes first and great work will follow.</span> Well tbh, still figuring out what that really means, but I'm diving in headfirst</p>
-      <p className="font-Inter font-normal mt-6">—and that's what matters.</p>
+        <p className="font-DMMono font-normal mt-6"> <span className="bg-sea_blue">having fun comes first and great work will follow.</span> Well tbh, still figuring out what that really means, but I'm diving in headfirst</p>
+        <p className="font-DMMono font-normal mt-6">—and that's what matters.</p>
       <div className={`transition-all duration-500 ${showMore ? 'max-h-[1000px]' : 'max-h-0'} overflow-hidden ${showMore ? '' : 'm-0'}`}>
         <div className="border-2 border-dashed border-sea_blue rounded-md mt-4 p-2">
-          <p className="font-Inter font-light">
+            <p className="font-DMMono font-light">
             <em>Make it Fun. Make it Cool. Make it Yours.</em>
           </p>
-          <p className="mt-4 font-Inter font-normal">
+            <p className="mt-4 font-DMMono font-normal">
             Hey this is {firstName}, welcome! I'm currently a student at Queen's University, Ontario, Canada finishing my Bachelors on Computer and Electrical Engineering with <em>2+ years of professional experience</em>. <strong>I bring a unique blend of technical expertise and passion to pick up literally anything and run with it.</strong>
           </p>
-          <p className="mt-4 font-Inter font-normal">
+            <p className="mt-4 font-DMMono font-normal">
             You might notice that I choose a little bit of everything in my projects (not even just coding!)
           </p>
-          <p className="mt-4 font-Inter font-normal">
+            <p className="mt-4 font-DMMono font-normal">
             I consider these projects as a creative process and I'm always looking for ways to improve my skills and make some cool stuff. Recently I've been learning Blender, Three.Js after developing an interest in computer graphics and animation. Although it may not be my technical specialty, it's my personal philosophy that the more you know, the more you can do.  
           </p>
           <p className="mt-4 font-DMMono font-normal">
             Everything will find its right place someday. :)
           </p>
-          <p className="mt-4 font-Inter font-normal">
+            <p className="mt-4 font-DMMono font-normal">
             When I'm not busy, I enjoy pumping some iron, playing guitar, gaming and making some random art. If you think that's cool and want to make some cool stuff together, dont hesitate to contact me. Cheers 🥂
           </p>
         </div>

@@ -9,11 +9,11 @@ import profile from '../profile';
 function Main() {  
   return (
     <div className="App">
-      <div className="relative min-h-screen selection:bg-sea_blue bg-gradient-to-b from-blue-100 via-sea_blue to-blue-900 overflow-hidden ">
+        <div className="relative min-h-screen selection:bg-sea_blue bg-flow overflow-hidden ">
         <div className="">
           <div className="relative z-10 fade-in-anim">
             <MusicProvider>
-              <div className="md:flex md:flex-row md:justify-between font-Inter text-sm min-h-screen border-4 border-auto border-sea_blue">
+              <div className="md:flex md:flex-row md:justify-between text-sm min-h-screen border-4 border-auto border-sea_blue">
                 <div className="bg-zinc-100 relative z-20">
                   <Portfolio className="mt-8 mb-8 md:w-[26rem] ml-8 mr-8 md:ml-16 md:mr-16 md:mt-8 flex justify-center md:justify-start text-left" />
                 </div>

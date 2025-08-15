@@ -85,7 +85,7 @@ function AudioPlayer( { className } ) {
               </p>
             </div>
           </div>
-          <div className="controls mt-4 font-Inter grid grid-cols-3 place-content-between justify-items-center">  
+          <div className="controls mt-4 font-DMMono grid grid-cols-3 place-content-between justify-items-center">
             <img className="w-5 h-5 cursor-pointer" src={process.env.PUBLIC_URL + "/icons/fast_rewind.svg"} alt="Previous" onClick={handlePrevious} />
             <img className="w-5 h-5 cursor-pointer" src={isPlaying ? process.env.PUBLIC_URL+"/icons/pause-icon.svg" : process.env.PUBLIC_URL + "/icons/play-icon.svg"} alt={isPlaying ? "Pause" : "Play"} onClick={togglePlay} />
             <img className="w-5 h-5 cursor-pointer" src={process.env.PUBLIC_URL + "/icons/fast_forward.svg"} alt="Next" onClick={handleNext} />

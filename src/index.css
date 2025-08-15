@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-DMMono;
+}
+
+.bg-flow {
+  background: linear-gradient(-45deg, #e0f7fa, #bae6fd, #e0f2fe, #c7ecef);
+  background-size: 400% 400%;
+  animation: gradient-flow 20s ease infinite;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
