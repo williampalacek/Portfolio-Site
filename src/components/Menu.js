@@ -22,25 +22,25 @@ function Menu({ className }) {
         <div className={`${className} fixed  /* other classes */`}>
             <Confetti active={ isExploding } config={ config }/>
             <div className="menu-container flex flex-row md:flex-col justify-right mr-4 md:space-x-0 space-x-4 p-2 bg-zinc-100 rounded-md border-2 border-black font-DMMono">
-                <a className="relative overflow-hidden transition-all bg-zinc-100 hover:bg-da_green group flex items-center justify-center cursor-pointer"
+                <a className="relative overflow-hidden transition-all bg-zinc-100 hover:bg-sea_blue group flex items-center justify-center cursor-pointer"
                     onClick={() => {
                         setIsExploding(!isExploding);
                         navigator.clipboard.writeText(profile.email);
                         alert('Email copied to clipboard! :)');
                     }}>
-                    <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+                    <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
                     <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out group-hover:text-black">
                         Email
                     </span>
                 </a>
-                <a href='https://github.com/theOneAndOnlyOne' className="relative overflow-hidden transition-all bg-zinc-100 hover:bg-da_green group flex items-center justify-center">
-                    <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+                <a href='https://github.com/theOneAndOnlyOne' className="relative overflow-hidden transition-all bg-zinc-100 hover:bg-sea_blue group flex items-center justify-center">
+                    <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
                     <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out group-hover:text-black">
                         GitHub
                     </span>
                 </a>
-                <a href='https://drive.google.com/file/d/12m45hgBw7oxK_u3GNEVKFOltmT0xd29T/view?usp=drive_link' className="relative overflow-hidden transition-all bg-zinc-100 hover:bg-da_green group flex items-center justify-center">
-                    <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+                <a href='https://drive.google.com/file/d/12m45hgBw7oxK_u3GNEVKFOltmT0xd29T/view?usp=drive_link' className="relative overflow-hidden transition-all bg-zinc-100 hover:bg-sea_blue group flex items-center justify-center">
+                    <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
                     <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out group-hover:text-black">
                         Resume
                     </span>

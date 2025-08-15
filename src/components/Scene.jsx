@@ -44,11 +44,11 @@ export function Scene() {
       <Computer
         ref={refComputer}
         position={[0, 0, 0]}
-        colors={[
-          new Color("#344541").convertLinearToSRGB(),
-          new Color("#38574d").convertLinearToSRGB(),
-          new Color("#7FAE58").convertLinearToSRGB(),
-          new Color("#CDE583").convertLinearToSRGB(),
+          colors={[
+          new Color("#0D47A1").convertLinearToSRGB(),
+          new Color("#1565C0").convertLinearToSRGB(),
+          new Color("#64B5F6").convertLinearToSRGB(),
+          new Color("#BBDEFB").convertLinearToSRGB(),
         ]}
       />
     </>
