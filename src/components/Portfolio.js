@@ -5,7 +5,7 @@ import ExtendedProjects from './ExtendedProjects';
 import Skills from './Skills';
 import CoolStuff from './CoolStuff';
 import WannaPlaySomeTunes from './WannaPlaySomeTunes';
-import Header from './Header';
+import HeroSection from './HeroSection';
 
 function Portfolio({ className }) {
   const [projectExpanded, setProjectExpanded] = useState(false);
@@ -24,7 +24,7 @@ function Portfolio({ className }) {
       <div className="portfolio">
         
         <div className={`${transitionClasses} ${projectExpanded ? expandedClasses : `${collapsedClasses} ${spacingClasses}`}`}>
-          <Header />
+          <HeroSection />
         </div>
         <div className={`${transitionClasses} ${projectExpanded ? expandedClasses : `${collapsedClasses} ${spacingClasses}`}`}>
           <Work />
