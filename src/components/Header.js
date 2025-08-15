@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Confetti from 'react-dom-confetti';
+import profile from '../profile';
 
 function Header() {
   const [showMore, setShowMore] = useState(false);
   const [isExploding, setIsExploding] = React.useState(false);
+  const firstName = profile.fullName.split(' ')[0];
 
   const config = {
     angle: 90,
@@ -33,7 +35,7 @@ function Header() {
   return (
     <header className="">
       <Confetti active={ isExploding } config={ config }/>
-      <h1 className="font-Outfit text-5xl font-bold">{">>"} jg.</h1>
+      <h1 className="font-Outfit text-5xl font-bold">{">>"} {profile.initials}.</h1>
       <p className="font-Inter font-normal mt-6"> <span className="bg-da_green">having fun comes first and great work will follow.</span> Well tbh, still figuring out what that really means, but I'm diving in headfirst</p>
       <p className="font-Inter font-normal mt-6">—and that's what matters.</p>
       <div className={`transition-all duration-500 ${showMore ? 'max-h-[1000px]' : 'max-h-0'} overflow-hidden ${showMore ? '' : 'm-0'}`}>
@@ -43,7 +45,7 @@ function Header() {
             <em>Make it Fun. Make it Cool. Make it Yours.</em>
           </p>
           <p className="mt-4 font-Inter font-normal">
-            Hey this is Josh, welcome! I'm currently a student at Queen's University, Ontario, Canada finishing my Bachelors on Computer and Electrical Engineering with <em>2+ years of professional experience</em>. <strong>I bring a unique blend of technical expertise and passion to pick up literally anything and run with it.</strong> 
+            Hey this is {firstName}, welcome! I'm currently a student at Queen's University, Ontario, Canada finishing my Bachelors on Computer and Electrical Engineering with <em>2+ years of professional experience</em>. <strong>I bring a unique blend of technical expertise and passion to pick up literally anything and run with it.</strong>
           </p>
           <p className="mt-4 font-Inter font-normal">
             You might notice that I choose a little bit of everything in my projects (not even just coding!)
@@ -76,7 +78,7 @@ function Header() {
           className="relative overflow-hidden transition-all bg-white hover:bg-da_green group rounded-md flex items-center justify-center w-[108px] h-[44px] border-current border-2"
           onClick={() => {
             setIsExploding(!isExploding);
-            navigator.clipboard.writeText('joshgonzales9891@gmail.com');
+            navigator.clipboard.writeText(profile.email);
             alert('Email copied to clipboard! :)');
           }}
         >

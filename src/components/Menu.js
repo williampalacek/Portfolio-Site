@@ -1,5 +1,6 @@
 import React from 'react';
 import Confetti from 'react-dom-confetti';
+import profile from '../profile';
 
 function Menu({ className }) {
     const [isExploding, setIsExploding] = React.useState(false);
@@ -24,7 +25,7 @@ function Menu({ className }) {
                 <a className="relative overflow-hidden transition-all bg-zinc-100 hover:bg-da_green group flex items-center justify-center cursor-pointer"
                     onClick={() => {
                         setIsExploding(!isExploding);
-                        navigator.clipboard.writeText('joshgonzales9891@gmail.com');
+                        navigator.clipboard.writeText(profile.email);
                         alert('Email copied to clipboard! :)');
                     }}>
                     <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
