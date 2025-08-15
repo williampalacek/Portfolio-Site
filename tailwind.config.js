@@ -11,10 +11,7 @@ module.exports = {
           DMMono: ['DM Mono', 'monospace'],
         },
         colors: {
-          'da_green':'#BFF47B',
-        },
-        backgroundImage: {
-          'ghibli': "url('../public/images/ghibli.jpg')",
+          'sea_blue':'#38BDF8',
         },
     },
   },

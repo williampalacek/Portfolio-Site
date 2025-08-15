@@ -92,7 +92,7 @@ function AudioPlayer( { className } ) {
           </div>
         </div>
         <input
-          className='mt-3 accent-da_green'
+          className='mt-3 accent-sea_blue'
           type="range"
           onChange={handleProgressChange}
           step="1"

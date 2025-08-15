@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Portfolio from './Portfolio';
 import Menu from './Menu';
 import AudioPlayer from './AudioPlayer';
@@ -9,11 +9,11 @@ import profile from '../profile';
 function Main() {  
   return (
     <div className="App">
-      <div className="relative min-h-screen selection:bg-da_green md:bg-zinc-100 bg-zinc-100 md:bg-cover overflow-hidden ">
+      <div className="relative min-h-screen selection:bg-sea_blue bg-gradient-to-b from-blue-100 via-sea_blue to-blue-900 overflow-hidden ">
         <div className="">
           <div className="relative z-10 fade-in-anim">
             <MusicProvider>
-              <div className="md:flex md:flex-row md:justify-between font-Inter text-sm min-h-screen border-4 border-auto border-da_green">
+              <div className="md:flex md:flex-row md:justify-between font-Inter text-sm min-h-screen border-4 border-auto border-sea_blue">
                 <div className="bg-zinc-100 relative z-20">
                   <Portfolio className="mt-8 mb-8 md:w-[26rem] ml-8 mr-8 md:ml-16 md:mr-16 md:mt-8 flex justify-center md:justify-start text-left" />
                 </div>
@@ -34,13 +34,10 @@ function Main() {
             </MusicProvider>
           </div>
         </div>
-      <div className="relative z-30 bg-da_green">
+      <div className="relative z-30 bg-sea_blue">
         <p className="uppercase font-DMMono">@{profile.fullName}</p>
       </div>
       </div>
-      <video id="video" className='hidden' loop>
-        <source src={process.env.PUBLIC_URL+ "/videos/test2.mp4"} type="video/mp4"></source>
-      </video>
     </div>
 
     

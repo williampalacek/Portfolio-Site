@@ -12,7 +12,7 @@ function SongInfo() {
             <h2 className='font-DMMono font-medium'>| Wanna play some tunes?</h2>
             <div className='flex'>
                 <p>
-                    You are Listening to <span className="bg-da_green"><strong>{currentSong.title}</strong></span> by <em>{currentSong.artist}</em>
+                    You are Listening to <span className="bg-sea_blue"><strong>{currentSong.title}</strong></span> by <em>{currentSong.artist}</em>
                 </p>
                 <img className='ml-2 w-5 h-5 cursor-pointer' src={process.env.PUBLIC_URL + "/icons/spotify.svg"} alt="Spotify Logo" onClick={handleImageClick} />
             </div>

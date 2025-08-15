@@ -36,11 +36,10 @@ function Header() {
     <header className="">
       <Confetti active={ isExploding } config={ config }/>
       <h1 className="font-Outfit text-5xl font-bold">{">>"} {profile.initials}.</h1>
-      <p className="font-Inter font-normal mt-6"> <span className="bg-da_green">having fun comes first and great work will follow.</span> Well tbh, still figuring out what that really means, but I'm diving in headfirst</p>
+      <p className="font-Inter font-normal mt-6"> <span className="bg-sea_blue">having fun comes first and great work will follow.</span> Well tbh, still figuring out what that really means, but I'm diving in headfirst</p>
       <p className="font-Inter font-normal mt-6">—and that's what matters.</p>
       <div className={`transition-all duration-500 ${showMore ? 'max-h-[1000px]' : 'max-h-0'} overflow-hidden ${showMore ? '' : 'm-0'}`}>
-        <div className="border-2 border-dashed border-da_green rounded-md mt-4 p-2">
-          <img src={process.env.PUBLIC_URL + "/images/dance.gif"} alt="Dance GIF" className="w-32 h-32 self-center" />
+        <div className="border-2 border-dashed border-sea_blue rounded-md mt-4 p-2">
           <p className="font-Inter font-light">
             <em>Make it Fun. Make it Cool. Make it Yours.</em>
           </p>
@@ -63,10 +62,10 @@ function Header() {
       </div>
       <nav className="flex space-x-4 text-[0.75rem] mt-6">
         <button
-          className="relative overflow-hidden transition-all bg-da_green hover:bg-da_green group rounded-md flex items-center justify-center w-[108px] h-[44px] border-current border-2"
+          className="relative overflow-hidden transition-all bg-sea_blue hover:bg-sea_blue group rounded-md flex items-center justify-center w-[108px] h-[44px] border-current border-2"
           onClick={toggleShowMore}
         >
-          <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+          <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
           <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out">
             {showMore ? 'Minimize' : 'Learn More'}
             <div className="flex justify-end ml-2">
@@ -75,18 +74,18 @@ function Header() {
           </span>
         </button>
         <button
-          className="relative overflow-hidden transition-all bg-white hover:bg-da_green group rounded-md flex items-center justify-center w-[108px] h-[44px] border-current border-2"
+          className="relative overflow-hidden transition-all bg-white hover:bg-sea_blue group rounded-md flex items-center justify-center w-[108px] h-[44px] border-current border-2"
           onClick={() => {
             setIsExploding(!isExploding);
             navigator.clipboard.writeText(profile.email);
             alert('Email copied to clipboard! :)');
           }}
         >
-          <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+          <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
           <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out">
             Email Me
             <div className="flex justify-end ml-2">
-              <img src={process.env.PUBLIC_URL + "/icons/copy-icon.svg"} alt=">" className="w-5 h-5  bg-da_green border-da_green border-2" />
+              <img src={process.env.PUBLIC_URL + "/icons/copy-icon.svg"} alt=">" className="w-5 h-5  bg-sea_blue border-sea_blue border-2" />
             </div>
           </span>
         </button>

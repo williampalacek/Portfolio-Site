@@ -30,7 +30,6 @@ function Projects({ sendExpandedStatToParent }) {
     {
       name: 'Kartt',
       description: 'Kartt is a free chrome extension I developed during university with some friends. Ever wonder how much you are actually paying for products online? Kartt reveals hidden fees before you even add it to your cart. Powered by AWS, Selenium and Python. Contact me for more info.',
-      image: '/images/Kartt.png',
       more: 'https://chromewebstore.google.com/detail/kartt/conhlcgjdfkgeijjkphckpnbpbidijce?hl=en'
     }
   ];
@@ -39,7 +38,6 @@ function Projects({ sendExpandedStatToParent }) {
     {
       name: 'squareSlayer',
       description: 'squareSlayer is my first dive into Unity. A 2D Unity Arena shooter using C# and Unity. Developed during my high school days.',
-      image: '/images/squareslayer.gif',
       link: 'https://github.com/theOneAndOnlyOne/',
       more: 'https://theoneandonlyone.github.io/squareSlayer/'
     },
@@ -76,7 +74,7 @@ function Projects({ sendExpandedStatToParent }) {
     <section className="projects">
       <div className="space-y-4">
       <h2 className='font-DMMono font-medium ' >| Projects</h2>
-        <div className='rounded border-dotted border-2 border-da_green p-4 space-y-4'>
+        <div className='rounded border-dotted border-2 border-sea_blue p-4 space-y-4'>
           {short_projects.map((project, index) => (
             <div key={index} className="project-card space-y-4 ">
               <p>{boldWord(project.description)}</p>
@@ -87,13 +85,13 @@ function Projects({ sendExpandedStatToParent }) {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative overflow-hidden transition-all bg-white hover:bg-da_green group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
+                  className="relative overflow-hidden transition-all bg-white hover:bg-sea_blue group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
                 >
-                  <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+                  <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
                   <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out">
                     Code
                     <div className="flex justify-end ml-3">
-                      <img src={process.env.PUBLIC_URL + "/icons/arrow-top-right.svg"} alt="^" className="w-4 h-4 bg-da_green border-da_green border-4"/>
+                      <img src={process.env.PUBLIC_URL + "/icons/arrow-top-right.svg"} alt="^" className="w-4 h-4 bg-sea_blue border-sea_blue border-4"/>
                     </div>
                   </span>
                 </a>
@@ -103,13 +101,13 @@ function Projects({ sendExpandedStatToParent }) {
                     href={project.more}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative overflow-hidden transition-all bg-white hover:bg-da_green group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
+                    className="relative overflow-hidden transition-all bg-white hover:bg-sea_blue group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
                   >
-                    <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+                    <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
                     <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out">
                       More
                       <div className="flex justify-end ml-3">
-                        <img src={process.env.PUBLIC_URL + "/icons/arrow-right.svg"} alt="^" className="w-4 h-4 bg-da_green border-da_green border-4"/>
+                        <img src={process.env.PUBLIC_URL + "/icons/arrow-right.svg"} alt="^" className="w-4 h-4 bg-sea_blue border-sea_blue border-4"/>
                       </div>
                     </span>
                   </a>
@@ -135,13 +133,13 @@ function Projects({ sendExpandedStatToParent }) {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative overflow-hidden transition-all bg-white hover:bg-da_green group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
+                  className="relative overflow-hidden transition-all bg-white hover:bg-sea_blue group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
                 >
-                  <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+                  <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
                   <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out">
                     Code
                     <div className="flex justify-end ml-3">
-                      <img src={process.env.PUBLIC_URL + "/icons/arrow-top-right.svg"} alt="^" className="w-4 h-4 bg-da_green border-da_green border-4"/>
+                      <img src={process.env.PUBLIC_URL + "/icons/arrow-top-right.svg"} alt="^" className="w-4 h-4 bg-sea_blue border-sea_blue border-4"/>
                     </div>
                   </span>
                 </a>
@@ -151,13 +149,13 @@ function Projects({ sendExpandedStatToParent }) {
                     href={project.more}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative overflow-hidden transition-all bg-white hover:bg-da_green group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
+                    className="relative overflow-hidden transition-all bg-white hover:bg-sea_blue group rounded-md flex items-center justify-center w-[85px] h-[30px] border-current border-2 text-xs"
                   >
-                    <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
+                    <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded-md translate-x-full ease-out duration-200 transition-all group-hover:translate-x-0"></span>
                     <span className="relative flex items-center justify-center text-black transition-colors duration-300 ease-in-out">
                       More
                       <div className="flex justify-end ml-3">
-                        <img src={process.env.PUBLIC_URL + "/icons/arrow-right.svg"} alt="^" className="w-4 h-4 bg-da_green border-da_green border-4"/>
+                        <img src={process.env.PUBLIC_URL + "/icons/arrow-right.svg"} alt="^" className="w-4 h-4 bg-sea_blue border-sea_blue border-4"/>
                       </div>
                     </span>
                   </a>

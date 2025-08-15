@@ -47,9 +47,9 @@ const Collapsible = () => {
                 <div key={index}>
                     <button 
                         onClick={() => toggle(index)} 
-                        className={`relative overflow-hidden transition-all w-full block ${openStates[index] ? 'bg-da_green' : 'bg-transparent'} hover:bg-da_green group rounded`}
+                        className={`relative overflow-hidden transition-all w-full block ${openStates[index] ? 'bg-sea_blue' : 'bg-transparent'} hover:bg-sea_blue group rounded`}
                     >
-                        <span className="absolute top-0 right-0 w-full h-full bg-da_green rounded translate-x-full ease-out duration-400 transition-all group-hover:translate-x-0"></span>
+                        <span className="absolute top-0 right-0 w-full h-full bg-sea_blue rounded translate-x-full ease-out duration-400 transition-all group-hover:translate-x-0"></span>
                         <div className="relative grid grid-cols-10 items-center text-sm p-1 border-b-2">
                             <h2 className="col-span-5 text-black transition-colors duration-400 ease-in-out flex justify-start ">{job.title}</h2>
                             <h2 className="col-span-2 text-black transition-colors duration-400 ease-in-out font-DMMono">{job.company}</h2>
@@ -69,8 +69,7 @@ const Collapsible = () => {
                         className="overflow-hidden transition-all duration-300 ease-in-out"
                         style={{ maxHeight: '0px' }}
                     >
-                        <div className="relative mt-1 border-b-2 border-dashed border-da_green rounded-md">
-                            {job.image && <img src={job.image} alt="Job Image" className="" />}
+                        <div className="relative mt-1 border-b-2 border-dashed border-sea_blue rounded-md">
                             <h4 className='text-sm'>{job.description}</h4>
                             <h4 className='text-sm font-light my-5'>{job.skills}</h4>
                         </div>
