@@ -13,6 +13,9 @@ module.exports = {
         colors: {
           'sea_blue':'#38BDF8',
         },
+        animation: {
+          'spin-slow': 'spin 8s linear infinite',
+        },
     },
   },
   plugins: [],

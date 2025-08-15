@@ -5,11 +5,13 @@ import AudioPlayer from './AudioPlayer';
 import { MusicProvider } from './MusicContext';
 import { FiberContainer } from './FiberContainer';
 import profile from '../profile';
+import GearBackground from './GearBackground';
 
 function Main() {  
   return (
     <div className="App">
       <div className="relative min-h-screen selection:bg-sea_blue bg-gradient-to-b from-blue-100 via-sea_blue to-blue-900 overflow-hidden ">
+        <GearBackground />
         <div className="">
           <div className="relative z-10 fade-in-anim">
             <MusicProvider>
