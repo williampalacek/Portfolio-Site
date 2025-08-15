@@ -4,6 +4,7 @@ import Menu from './Menu';
 import AudioPlayer from './AudioPlayer';
 import { MusicProvider } from './MusicContext';
 import { FiberContainer } from './FiberContainer';
+import profile from '../profile';
 
 function Main() {  
   return (
@@ -34,7 +35,7 @@ function Main() {
           </div>
         </div>
       <div className="relative z-30 bg-da_green">
-        <p className="uppercase font-DMMono">@Joshua Gonzales</p>
+        <p className="uppercase font-DMMono">@{profile.fullName}</p>
       </div>
       </div>
       <video id="video" className='hidden' loop>
